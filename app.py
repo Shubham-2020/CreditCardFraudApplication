@@ -12,6 +12,15 @@ model = pickle.load(open('model.pkl', 'rb'))
 def home():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
+
 #To use the predict button in our web-app
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -24,7 +33,7 @@ def predict():
 
     output = prediction[0]
 
-    return render_template('index.html', prediction_text='Probability of Credit card fraud :{}'.format(output))
+    return render_template('index.html', prediction_text='Fraud Prediction(0(No), 1(Yes))  ::  {}'.format(output))
 
 if __name__ == "__main__":
     app.run(debug=True)

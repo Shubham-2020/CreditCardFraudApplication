@@ -22,7 +22,7 @@ body {
 	width: 100%;
 	height:100%;
 	font-family: 'Open Sans', sans-serif;
-	background: #331952;
+	background: #547cb131;
 	color: #fff;
 	font-size: 18px;
 	text-align:center;
@@ -42,6 +42,8 @@ body {
 	margin: -150px 0 0 -150px;
 	width:400px;
 	height:400px;
+	text-align: center;
+	text-justify: inter-word;
 }
 
 .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
@@ -65,4 +67,14 @@ input {
 	-ms-transition: box-shadow .5s ease;
 	transition: box-shadow .5s ease;
 }
+
+a {
+	color: #fff;
+}
+
+.hdr {
+	text-align: center;
+	text-justify: inter-word;
+  }
+
 input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
