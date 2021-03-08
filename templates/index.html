@@ -12,7 +12,7 @@
 <div class ="hdr">
 <a href="/">Home | </a>
 <a href="about">About |</a>
-  <a href="team"> Team </a> 
+  <a href="team"> Team </a>
 </div>
 </head>
 <body>
@@ -23,11 +23,11 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Time" placeholder="Time" required="required" />
-        <input type="text" name="V1" placeholder="V1" required="required" />
-		<input type="text" name="V2" placeholder="V2" required="required" />
-    <input type="text" name="V3" placeholder="V3" required="required" />
-    <input type="text" name="Amount" placeholder="Amount" required="required" />
+    	<input type="number" name="Time" placeholder="Time" step="0.0000000001" required="required" />
+        <input type="number" name="V1" placeholder="V1" step="0.0000000001" required="required" />
+		<input type="number" name="V2" placeholder="V2" step="0.0000000001" required="required" />
+    <input type="number" name="V3" placeholder="V3" step="0.0000000001" required="required" />
+    <input type="number" name="Amount" placeholder="Amount" step="0.0000000001" required="required" />
         <button type="submit" class="btn">Predict</button>
     </form>
 
